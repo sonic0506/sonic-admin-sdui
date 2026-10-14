@@ -7,17 +7,6 @@ const meta = {
   component: Button,
   tags: ['ai-generated', 'needs-work'],
   args: { children: 'Save', onClick: fn() },
-  // react-docgen 이 cva 의 VariantProps 를 풀지 못해 object 컨트롤로 잡히므로 직접 지정한다
-  argTypes: {
-    variant: {
-      control: 'select',
-      options: ['default', 'outline', 'secondary', 'ghost', 'destructive', 'link'],
-    },
-    size: {
-      control: 'select',
-      options: ['default', 'xs', 'sm', 'lg', 'icon', 'icon-xs', 'icon-sm', 'icon-lg'],
-    },
-  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
